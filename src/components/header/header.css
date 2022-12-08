@@ -1,0 +1,22 @@
+.header {
+  background-color: #cfcece;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 4rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header__logo-container {
+  width: 17rem;
+}
+
+.header__logo {
+  width: 100%;
+}

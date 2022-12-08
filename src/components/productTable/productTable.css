@@ -1,0 +1,136 @@
+.table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  margin-top: 12rem;
+}
+
+.table__add-button {
+  min-width: min-content;
+  background-color: #587a6f;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  border: none;
+  border-radius: 3px;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
+
+.ant-btn-default:not(:disabled):hover {
+  color: #ffffff;
+  border: none;
+}
+.table__search {
+  width: 40rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.table__container {
+  display: flex;
+  justify-content: center;
+  /* min-width: 90vw; */
+}
+
+.ant-table-wrapper .ant-table {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-width: 90vw;
+  color: var(--very-dark-gray);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  color: var(--very-dark-gray);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.table__edit-link {
+  color: var(--very-dark-gray);
+  font-weight: 500;
+  cursor: pointer;
+}
+.table__edit-link:hover {
+  color: hsl(0, 1%, 35%);
+}
+
+.error-container {
+  min-height: calc(100vh - 120px);
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 2.5rem 0;
+}
+.error-container h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.error-container .error {
+  text-transform: lowercase;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.table-btn {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  color: #ffff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  transition: all 0.2s ease-out;
+}
+
+.table__edit-btn {
+  font-size: 1.5rem;
+  background-color: rgb(36, 148, 36);
+}
+.table__edit-btn:hover {
+  background-color: rgb(42, 88, 42);
+  color: #ffffff;
+}
+.table__delete-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(163, 25, 25);
+}
+.table__delete-btn:hover {
+  background-color: rgb(133, 25, 25);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .ant-table-wrapper .ant-table,
+  .ant-table-wrapper .ant-table-thead > tr > th,
+  .table__search {
+    font-size: 1.5rem;
+  }
+  .table__search {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .table__header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .table__header :first-child {
+    align-self: flex-start;
+  }
+  .table__search {
+    width: 28.5rem;
+  }
+}

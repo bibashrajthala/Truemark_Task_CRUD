@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import "antd/dist/antd.css";
+// import "antd/dist/antd.min.css";
+import ProductForm from "./components/productForm/ProductForm";
+import ProductTable from "./components/productTable/ProductTable";
+import { Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getProducts } from "./features/product/productSlice";
+import Header from "./components/header/Header";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log("use Effect 1");
+    dispatch(getProducts());
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<ProductTable />} />
+        <Route path="/products" element={<ProductForm />} />
+        <Route path="/product/:id" element={<ProductForm />} />
+      </Routes>
     </div>
   );
 }

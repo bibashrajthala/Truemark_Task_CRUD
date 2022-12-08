@@ -1,0 +1,30 @@
+{
+  "status": "200",
+  "message": "success",
+  "data": [
+    {
+      "id": "1",
+      "product_name": "Lenovo Ideapad 3",
+      "description": "Latest thin and light lenovo laptop with 12th gen processor",
+      "category": "Laptops",
+      "status": "In Stock",
+      "date": "2021-09-12"
+    },
+    {
+      "id": "2",
+      "product_name": "Samsung galaxy F22",
+      "description": "Battery powerhouse smartphone with 6000mAh battery and Amoled display",
+      "category": "Smartphones",
+      "status": "Out of Stock",
+      "date": "2022-01-12"
+    },
+    {
+      "id": "3",
+      "product_name": "LG washing machine",
+      "description": "Washing machine with the feature to wash upto 8KG clothes at once",
+      "category": "Electronics",
+      "status": "In Stock",
+      "date": "2022-10-12"
+    }
+  ]
+}
