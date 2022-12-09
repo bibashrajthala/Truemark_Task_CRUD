@@ -115,7 +115,7 @@ const ProductTable = () => {
     <div>
       <div className="table__header">
         <Button
-          onClick={() => navigate("/products")}
+          onClick={() => navigate("/product/add")}
           className="table__add-button"
         >
           Add New Product
