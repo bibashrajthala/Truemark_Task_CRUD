@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<ProductTable />} />
-        <Route path="/products" element={<ProductForm />} />
+        <Route path="/product/add" element={<ProductForm />} />
         <Route path="/product/:id" element={<ProductForm />} />
       </Routes>
     </div>
